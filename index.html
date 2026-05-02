@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Pratyusha ❤️</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  CINEMATIC INTRO                                        -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="cinematic-intro">
+  <canvas id="intro-canvas"></canvas>
+  <div class="intro-content">
+    <p class="intro-line" id="intro-line-1">Some stories are not written…</p>
+    <p class="intro-line" id="intro-line-2">They are felt…</p>
+    <h1 class="intro-name" id="intro-name">Pratyusha <span class="heart-glow">❤️</span></h1>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  LOCK SCREEN                                            -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="lock-screen" class="hidden">
+  <canvas id="particle-canvas"></canvas>
+  <div class="lock-content">
+    <div class="lock-icon">🔒</div>
+    <h2 class="lock-title">Something special is waiting for you,</h2>
+    <h1 class="lock-name">Pratyusha</h1>
+    <p class="lock-sub">Unlocks on your birthday — 8th May at midnight ✨</p>
+    <div class="countdown-wrapper">
+      <div class="countdown-unit"><span id="cd-days">00</span><label>Days</label></div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-unit"><span id="cd-hours">00</span><label>Hours</label></div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-unit"><span id="cd-mins">00</span><label>Mins</label></div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-unit"><span id="cd-secs">00</span><label>Secs</label></div>
+    </div>
+    <p class="lock-hint" id="lock-hint">💖 Counting every second…</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  UNLOCK BURST OVERLAY                                   -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="unlock-burst" class="hidden">
+  <canvas id="burst-canvas"></canvas>
+  <div class="burst-text">🎉 Happy Birthday Pratyusha ❤️</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  MAIN SITE                                              -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="main-site" class="hidden">
+
+  <!-- MUSIC CONTROL -->
+  <div id="music-btn" title="Toggle Music">🎵</div>
+  <audio id="bg-music" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/08/04/audio_2dde668d05.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- PARALLAX LAYERS -->
+  <div id="parallax-bg">
+    <div class="para-layer" id="para-stars"></div>
+    <div class="para-layer" id="para-nebula"></div>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-pre reveal">A love woven in stardust…</p>
+      <h1 class="hero-title reveal">Happy Birthday<br><span class="name-glow">Pratyusha</span></h1>
+      <p class="hero-date reveal">8th May ✨</p>
+      <div id="floating-hearts-container"></div>
+    </div>
+  </section>
+
+  <!-- ── HEARTBEAT ── -->
+  <section id="heartbeat-section">
+    <div class="hb-inner">
+      <h2 class="section-title reveal">Feel It…</h2>
+      <div id="hb-hold-btn">
+        <span class="hb-icon">❤️</span>
+        <span class="hb-label">Press &amp; Hold</span>
+      </div>
+      <p class="hb-hint reveal">Hold to feel my heartbeat…</p>
+      <canvas id="hb-canvas"></canvas>
+    </div>
+  </section>
+
+  <!-- ── AI VOICE MESSAGE ── -->
+  <section id="voice-section">
+    <div class="voice-inner">
+      <h2 class="section-title reveal">Listen to My Message</h2>
+      <button id="voice-btn" class="voice-btn">
+        <span class="voice-icon">🎙️</span> Listen to my message
+      </button>
+      <div id="voice-progress-bar"><div id="voice-progress-fill"></div></div>
+      <div id="voice-text-display" class="voice-text"></div>
+    </div>
+  </section>
+
+  <!-- ── MAIN MESSAGE ── -->
+  <section id="message-section">
+    <div class="message-inner">
+      <h2 class="section-title reveal">My Heart Speaks…</h2>
+      <div class="message-card reveal">
+        <p>Dear Pratyusha,</p>
+        <p>On this day, the universe conspired to bring someone extraordinary into existence — you. And somehow, in the gentle chaos of tuitions and textbooks, it brought you into my life too.</p>
+        <p>I don't have the right words — no poem is beautiful enough, no song is deep enough — to truly say what you mean to me. You are the soft light that fills even my darkest mornings. The thought that makes me smile at nothing. The name I write in the margins of my heart.</p>
+        <p>Since December 17th, 2023, you have unknowingly become my favorite story — the one I keep returning to, the one I don't want to end. Bankura gave me many things, but none more precious than you.</p>
+        <p>I hope this birthday wraps you in all the warmth you so effortlessly give others. I hope you feel celebrated, loved, and seen — because you deserve every beautiful thing this world has to offer.</p>
+        <p>Happy Birthday, Pratyusha. You are my favorite what-if, my most beautiful coincidence, my heart's quietest and loudest song.</p>
+        <p class="message-sign">— Always yours, with love ❤️</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── OUR STORY ── -->
+  <section id="story-section">
+    <div class="story-inner">
+      <h2 class="section-title reveal">Our Story</h2>
+      <div class="story-card reveal">
+        <div class="story-icon">📖</div>
+        <p>It started on a winter afternoon — <strong>17th December 2023</strong> — in a tuition class in <strong>Bankura, West Bengal</strong>. Two strangers who happened to sit close enough for the universe to whisper something into the air between them.</p>
+        <p>You had a way of existing that made everything feel softer. Your laugh was the kind that rearranges something inside you. Your presence — quiet, warm, magnetic — became the background music of my days.</p>
+        <p>I don't know if you noticed, but I noticed everything. The way you'd tuck your hair. The way your eyes lit when you understood something. The way you made ordinary days feel like they were worth writing about.</p>
+        <p>This isn't just a birthday page. This is a love letter to the story that began that December — a story still being written, one heartbeat at a time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TIMELINE ── -->
+  <section id="timeline-section">
+    <div class="timeline-inner">
+      <h2 class="section-title reveal">Our Timeline</h2>
+      <div class="timeline">
+        <div class="tl-item reveal" data-side="left">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">December 17, 2023</span>
+            <h3>The Beginning</h3>
+            <p>First day at tuition — Bankura, West Bengal. Two lives crossing paths for the very first time.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal" data-side="right">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">Winter 2024</span>
+            <h3>Familiar Silence</h3>
+            <p>Shared notes, stolen glances. The comfortable silence that grows between people who are becoming something to each other.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal" data-side="left">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">Spring 2024</span>
+            <h3>First Conversations</h3>
+            <p>Words finally found their way. Each conversation a little longer, a little deeper. You became someone I looked forward to.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal" data-side="right">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">Mid 2024</span>
+            <h3>The Realization</h3>
+            <p>The moment you realize someone has quietly become essential — like air, like light. You were already woven into my days.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal" data-side="left">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">Late 2024</span>
+            <h3>Memories Collected</h3>
+            <p>Small moments stacked into something precious. Every memory with you — a treasure I carry quietly.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal" data-side="right">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">8th May 2025</span>
+            <h3>Your Birthday ❤️</h3>
+            <p>Today. The day I get to tell you — through this page, through every pixel — just how much you mean to me.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAKE CHAT ── -->
+  <section id="chat-section">
+    <div class="chat-inner">
+      <h2 class="section-title reveal">If Only I Could Send This…</h2>
+      <div class="chat-phone reveal">
+        <div class="chat-header">
+          <div class="chat-avatar">P</div>
+          <div class="chat-name">Pratyusha <span class="online-dot"></span></div>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <div class="chat-typing hidden" id="chat-typing">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VOICE NOTE ── -->
+  <section id="voicenote-section">
+    <div class="vn-inner">
+      <h2 class="section-title reveal">A Message I Wish I Could Say…</h2>
+      <div class="vn-player reveal">
+        <div class="vn-avatar">❤️</div>
+        <div class="vn-body">
+          <div class="vn-name">Voice Note</div>
+          <div class="vn-waveform" id="vn-waveform">
+            <!-- bars injected by JS -->
+          </div>
+          <div class="vn-time" id="vn-time">0:00 / 0:12</div>
+        </div>
+        <button class="vn-play" id="vn-play">▶</button>
+      </div>
+      <p class="vn-caption reveal italic">"If silence could speak, it would sound like everything I feel for you."</p>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ── -->
+  <section id="gallery-section">
+    <div class="gallery-inner">
+      <h2 class="section-title reveal">Moments of You</h2>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item" data-src="https://i.ibb.co/0yJPG7yd/tmpl7q15m-x.jpg">
+          <img src="https://i.ibb.co/0yJPG7yd/tmpl7q15m-x.jpg" alt="Pratyusha" loading="lazy">
+          <div class="gallery-overlay"><span>✨</span></div>
+        </div>
+        <div class="gallery-item" data-src="https://i.ibb.co/d0B7tvD6/tmp0h2pixqc.jpg">
+          <img src="https://i.ibb.co/d0B7tvD6/tmp0h2pixqc.jpg" alt="Pratyusha" loading="lazy">
+          <div class="gallery-overlay"><span>💖</span></div>
+        </div>
+        <div class="gallery-item" data-src="https://i.ibb.co/Ts0gd70/tmp91cz6bh8.jpg">
+          <img src="https://i.ibb.co/Ts0gd70/tmp91cz6bh8.jpg" alt="Pratyusha" loading="lazy">
+          <div class="gallery-overlay"><span>🌸</span></div>
+        </div>
+        <div class="gallery-item" data-src="https://i.ibb.co/ksXt8sGc/tmpxk8qu98s.jpg">
+          <img src="https://i.ibb.co/ksXt8sGc/tmpxk8qu98s.jpg" alt="Pratyusha" loading="lazy">
+          <div class="gallery-overlay"><span>🌟</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="hidden">
+    <div class="lb-close" id="lb-close">✕</div>
+    <img id="lb-img" src="" alt="">
+  </div>
+
+  <!-- ── FINAL MESSAGE ── -->
+  <section id="final-section">
+    <canvas id="fireworks-canvas"></canvas>
+    <div class="final-inner">
+      <p class="final-pre reveal">A message from me…</p>
+      <h2 class="final-title reveal">Happy Birthday,<br><span class="name-glow">Pratyusha</span> ❤️</h2>
+      <p class="final-quote reveal">"In a world full of fleeting moments, you are the one I want to keep forever."</p>
+      <button id="fireworks-btn" class="fw-btn reveal">🎆 Celebrate!</button>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer id="site-footer">
+    <p id="footer-click-target">Made with infinite love ❤️ — Always Yours</p>
+    <p class="footer-tiny">© 2025 — For Pratyusha, always.</p>
+  </footer>
+
+</div><!-- /main-site -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  ADMIN PANEL                                            -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="admin-overlay" class="hidden">
+  <div id="admin-panel">
+    <h3>🔐 Admin Panel</h3>
+    <div id="admin-login">
+      <input type="password" id="admin-password" placeholder="Enter password…">
+      <button id="admin-login-btn">Unlock Panel</button>
+      <p id="admin-err" class="hidden">Wrong password</p>
+    </div>
+    <div id="admin-content" class="hidden">
+      <div class="admin-row"><span>Current Time:</span><span id="admin-time"></span></div>
+      <div class="admin-row"><span>Status:</span><span id="admin-status"></span></div>
+      <div class="admin-row"><span>Target:</span><span>8 May 2025 00:00:00</span></div>
+      <div class="admin-actions">
+        <button id="admin-unlock">🔓 Manual Unlock</button>
+        <button id="admin-preview">🎆 Preview Fireworks</button>
+        <button id="admin-lock">🔒 Re-Lock</button>
+        <button id="admin-close">✕ Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
